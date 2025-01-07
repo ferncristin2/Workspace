@@ -1,4 +1,4 @@
-public class TelaDoisPokemon {
+public class SegundaTelaPokemon {
     public static void main(String[] args) {
         
         String nomePokemon = {"Pikachu"}
