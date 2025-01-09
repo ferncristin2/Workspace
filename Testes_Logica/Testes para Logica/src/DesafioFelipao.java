@@ -2,39 +2,26 @@ public class DesafioFelipao {
 
     public static void main(String[] args) {
 
-        int xpHeroi=5000;
+        int xpHeroi=10800;
         String nomeHeroi = "Aruathnar";
-
-        switch (xpHeroi) { 
-        case 1000:{
-        System.out.println("Nosso heroi " + nomeHeroi + " tem Experiência nível Ferro.");
-        break; }
-        case 2000:{
-        System.out.println("Nosso heroi " + nomeHeroi + " tem Experiência nível Bronze."); 
-        break;}
-        case 5000:{
-        System.out.println("Nosso heroi " + nomeHeroi + " tem Experiência nível Prata.");
-        break;}
-        case 7000:{
-        System.out.println("Nosso heroi " + nomeHeroi + " tem Experiência nível Ouro.");
-        break;}
-        case 8000:{
-        System.out.println("Nosso heroi " + nomeHeroi + " tem Experiência nível Platina."); 
-        break;}
-        case 9000:{ 
-        System.out.println("Nosso heroi " + nomeHeroi + " tem Experiência nível Ascendente."); 
-        break;}
-        case 10000:{
-        System.out.println("Nosso heroi " + nomeHeroi + " tem Experiência nível Imortal."); 
-        break;}
-        case 10000:{
-        System.out.println("Nosso heroi " + nomeHeroi + " tem Experiência nível Imortal."); 
-        break;}
-        default:{
-        System.out.println("Nosso heroi " + nomeHeroi + " tem Experiência nível Imortal.");
-    
+        String nivel;
+        
+        if (xpHeroi < 1000) { nivel = "Ferro";
+        } 
+        else if (xpHeroi <= 2000) { nivel = "Bronze"; 
+        } 
+        else if (xpHeroi <= 5000) { nivel = "Prata"; 
+        } 
+        else if (xpHeroi <= 7000) { nivel = "Ouro";    
+        } 
+        else if (xpHeroi <= 8000) { nivel = "Platina"; 
+        } 
+        else if (xpHeroi <= 9000) { nivel = "Ascendente"; 
+        } 
+        else if (xpHeroi <= 10000) { nivel = "Imortal"; 
+        } 
+        else { nivel = "Radiante"; 
+        } 
+        System.out.println("Nosso Herói " + nomeHeroi + " está no nível " + nivel);
     }
-    }
-    }
-    }
-    
+}
